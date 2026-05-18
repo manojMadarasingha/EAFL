@@ -28,20 +28,28 @@ To address these challenges, this work proposes **EAFAL**, an **Edge-Based Agent
 
 EAFAL employs three lightweight specialist agents that consider both:
 
-- **System factors** such as available memory
-- **User requirements** such as expected quality and latency
+- System factors such as available memory
+- User requirements such as expected quality and latency
 
 Using these factors, EAFAL selects the most suitable SLM or LLM for a given text query prior to inference.
 
 Compared to existing approaches, EAFAL achieves:
 
-- **More effective SLM and LLM selection**
-- **Significantly lower model selection time** (`1.9 × 10⁻⁴ s`)
-- **72.71% improvement in output quality**
-- **34.85% reduction in memory usage**
-- **Average latency of 4.62 seconds**
+- More effective SLM and LLM selection
+- Significantly lower model selection time (`1.9 × 10⁻⁴ s`)
+- 72.71% improvement in output quality
+- 34.85% reduction in memory usage
+- Average latency of 4.62 seconds
 
 These results demonstrate the suitability of EAFAL for resource-aware and edge-driven Generative AI applications.
+
+---
+
+## Overview of the Methodology
+
+The figure below illustrates the overall EAFAL framework and the agent-based decision process used for selecting between SLMs and LLMs under system and user constraints.
+
+![Overview of EAFAL Methodology](images/overview.png)
 
 ---
 
